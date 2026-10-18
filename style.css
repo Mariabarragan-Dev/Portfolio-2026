@@ -7,7 +7,7 @@
 }
 
 .card {
-  margin: 0;                  /* figure trae márgenes por defecto */
+  margin: 0;                  
   padding: 1.5rem 1rem;
   background: #fff;
   border-radius: 12px;
@@ -24,11 +24,61 @@
 .card img {
   width: 80px;
   height: 80px;
-  object-fit: contain;        /* evita que se deformen los logos */
+  object-fit: contain;        
   display: block;
   margin: 0 auto 1rem;
 }
 
 .card figcaption {
   font-weight: 600;
+}
+
+.project-card {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.use-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.use-tools li {
+  padding: 0.3rem 0.8rem;
+  background: #f0f0f0;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.project-link {
+  color: inherit;
+  display: flex;
+  transition: transform 0.2s;
+}
+
+.project-link:hover {
+  transform: translateX(4px);
 }
